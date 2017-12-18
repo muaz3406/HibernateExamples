@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<!--model sınıfının bulunduğu paket ismi -->
+<hibernate-mapping package="com.otostore.model">
+	<!-- sınıf ismi ile tablo ismi eşleştirme -->
+	<class name="Vendor" table="Vendor_Hibernate_XML" catalog="oto_store"
+		dynamic-update="true">
+
+		<!-- unique id, tipi ve ismi -->
+		<id name="id" type="long">
+			<column name="Vendor_ID"/>
+			<generator class="identity"/>
+		</id>
+		
+		<!-- data alanlarının tablolardaki kolon isimleri ve kolon tipleri -->
+		<property name="name" type="string">
+		<column name="Name"></column>
+		</property>
+		
+		<property name="surName" type="string">
+		<column name="SurName"></column>
+		</property>
+		
+		<property name="firm" type="string">
+		<column name="Firm"></column>
+		</property>
+		
+		<property name="addDate" type="timestamp">
+		<column name="AddDate"></column>
+		</property>
+
+		<property name="updateDate" type="timestamp">
+		<column name="UpdateDate"></column>
+		</property>
+	</class>
+
+
+
+
+</hibernate-mapping>

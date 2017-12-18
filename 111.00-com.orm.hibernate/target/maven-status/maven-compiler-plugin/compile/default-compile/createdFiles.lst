@@ -1,0 +1,10 @@
+com\otostore\model\CarDetail.class
+com\otostore\test\UpdateRecord.class
+com\otostore\session\HibernateSessionFactory.class
+com\otostore\model\Vendor.class
+com\otostore\test\Create_Table.class
+com\otostore\test\SaveOrUpdate.class
+com\otostore\test\Create_Insert_Table.class
+com\otostore\test\MergeRecord.class
+com\otostore\util\TimeStampFactory.class
+com\otostore\test\MergeRecord2.class
